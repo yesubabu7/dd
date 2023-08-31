@@ -62,5 +62,38 @@ public class MedicineController {
 
 		// Redirect back to the page
 		return ""; // Replace with the appropriate URL
-	}
+	
+
+
+
+
+		
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @RequestMapping(value = "/add", method = RequestMethod.POST)
+    public String addMedicine(@RequestParam("medicineId") int medicineId,
+                              @RequestParam("quantity") int quantity,
+                              @RequestParam("price") double price) {
+        
+        // Here you can use the retrieved data as needed
+        System.out.println("Selected Medicine ID: " + medicineId);
+        System.out.println("Quantity: " + quantity);
+        System.out.println("Price: " + price);
+
+        // Perform necessary operations, such as saving the data to a database
+        // ...
+
+        return "redirect:/"; // Redirect to a relevant page after processing
+    }
