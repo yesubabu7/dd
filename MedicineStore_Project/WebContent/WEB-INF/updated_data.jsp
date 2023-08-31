@@ -34,9 +34,7 @@
             </table>
         </c:if>
         
-        <c:if test="${not updated}">
-            <p>Failed to update medicine data.</p>
-        </c:if>
+        
         
         <a href="yourPageUrl">Go Back</a>
     </div>
